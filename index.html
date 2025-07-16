@@ -1,64 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>My Portfolio</title>
-</head>
-<!-- header -->
-<body class="">
-    <nav class="flex  pl-10  md:pl-20   pt-10   md:pt-20 ">
-        <img src="image/Screenshot_20250603-084816.png" class="w-20 h-10">
-        <button id="modeBtn" class=" ml-auto mr-10 bg-blue-500 hover:bg-blue-700 text-white rounded  w-20 h-10 ">Switch me</button>
+  </head>
+  <!-- header -->
+  <body class="">
+    <nav class="flex pl-10 md:pl-20 pt-10 md:pt-20">
+      <img src="image/Screenshot_20250603-084816.png" class="w-20 h-10" />
+      <button
+        id="modeBtn"
+        class="ml-auto mr-10 bg-blue-500 hover:bg-blue-700 text-white rounded w-20 h-10"
+      >
+        Switch me
+      </button>
     </nav>
-    <div class="flex flex-col text-center justify-center h-100 space-y-10 px-10  md:px-20">
-        <h1 id="h1"   class="text-5xl font-bold font-sans "><span class="text-xl font-light">Hello...</span> I Am Abdulsalam Idris</h1>
-        <h3 id="h3" class=" text-2xl  md:text-3xl">A Font-end Developer</h3>
-        <button class=" px-4 py-2 w-fit mx-auto rounded-md bg-blue-500 text-white"><a href="#projects">View Projects</a></button>
+    <div
+      class="flex flex-col text-center justify-center h-100 space-y-10 px-10 md:px-20"
+    >
+      <h1 id="h1" class="text-5xl font-bold font-sans">
+        <span class="text-xl font-light">Hello...</span> I Am Abdulsalam Idris
+      </h1>
+      <h3 id="h3" class="text-2xl md:text-3xl">A Font-end Developer</h3>
+      <button class="px-4 py-2 w-fit mx-auto rounded-md bg-blue-500 text-white">
+        <a href="#projects">View Projects</a>
+      </button>
     </div>
     <!-- about -->
-    <div class="flex flex-col md:flex-row p-10  md:p-20 mb-50  md:mb-10 md:space-x-50">
-        <div class="flex mb-10"> 
-            <img src="image/idris2.jpg" class="w-500 h-80 self-center   md:w-500 md:h-100">
-        </div>
-        <div class="space-y-10 w-50% h-100">
-            <h2 class="text-5xl text-center md:text-left  font-bold font-sans">About</h2>
-            <p class="text-xl text-center md:text-left   ">I am ABDULSALAM IDRIS, a passionate front-end developer and Full-stack enthusiast eager to build beautiful and responsive websites.
-I specialize in HTML, CSS and JavaScript, with hands-on experience. I love turning creative ideas into interactive user experiences and continuosly learning new technologies to improve my skills.
-Currently, I am looking for opportunities to gain real-world experience, collaborate with other developers and grow in the tech industry.</p>
-        </div>
+    <div
+      class="flex flex-col md:flex-row p-10 md:p-20 mb-50 md:mb-10 md:space-x-50"
+    >
+      <div class="flex mb-10">
+        <img
+          src="image/idris2.jpg"
+          class="w-500 h-80 self-center md:w-500 md:h-100"
+        />
+      </div>
+      <div class="space-y-10 w-50% h-100">
+        <h2 class="text-5xl text-center md:text-left font-bold font-sans">
+          About
+        </h2>
+        <p class="text-xl text-center md:text-left">
+          I am ABDULSALAM IDRIS, a passionate front-end developer and Full-stack
+          enthusiast eager to build beautiful and responsive websites. I
+          specialize in HTML, CSS and JavaScript, with hands-on experience. I
+          love turning creative ideas into interactive user experiences and
+          continuosly learning new technologies to improve my skills. Currently,
+          I am looking for opportunities to gain real-world experience,
+          collaborate with other developers and grow in the tech industry.
+        </p>
+      </div>
     </div>
     <!-- projects -->
-     <div class="space-y-10 ">
-        <h2 class="text-5xl font-bold text-center  mb-20" id="projects">Projects</h2>
-        <div class="flex flex-col md:flex-row px-10  md:px-20 space-y-20   md:space-x-10 mb-20">
-            <div class="flex flex-col md:block space-y-5">
-                <img src="image/Responsive testimonial grid.jpg" class="w-100 h-50  md:w-100 md:h-50">
-                <h3 class="font-bold text-xl text-center md:text-left">Responsive Testimonial Grid</h3>
-                <p class="font-sans text-center md:text-left">This project is a responsive testimonial grid layout built with HTML and CSS. It showcases reviews from graduates of a coding bootcamp, presented in an aesthetically pleasing and organized grid format.</p>
-                <button class="  px-4 py-2 w-fit mx-auto   rounded-md bg-blue-500 text-white"><a href="https://hydrees.github.io/Testimonial-html/">Explore Project</a></button>
-            </div>
-            <div class="flex flex-col items-center   md:block   space-y-5">
-                <img src="image/Responsive Order summary project.jpg" class="w-100 h-50  md:w-100 md:h-50">
-                <h3 class="font-bold text-xl text-center md:text-left">Responsive Order Summary</h3>
-                <p class="font-sans text-center md:text-left">This project is a responsive and user-friendly Order Summary UI designed for a music streaming service. It allows users to review their selected plan and proceed to payment seamlessly. The page is clean, modern, and built with accessibility and user experience in mind.</p>
-                <button class=" px-4 py-2 w-fit mx-auto  rounded-md bg-blue-500 text-white"><a href="https://hydrees.github.io/ordersummaryfrontendmentor-html/">Explore Project</a></button>
-            </div>
-            <div class="flex flex-col md:block   space-y-5">
-                <img src="image/Responsive landing page.jpg" class="w-100 h-50  md:w-100 md:h-50">
-                <h3 class="font-bold text-xl text-center md:text-left">Responsive Landing page</h3>
-                <p class="font-sans text-center md:text-left">This project is a modern responsive landing page desined and built using HTML & CSS. It showcase a clean layout and optimized for all screen sizes. The goal is to create an engaging first impression for visitors while maintaining a simple, fast-loading structure.</p>
-                <button class=" px-4 py-2 w-fit mx-auto  rounded-md bg-blue-500 text-white"><a href="https://hydrees.github.io/Newlandingpage-html/">Explore Project</a></button>
-            </div>
+    <div class="space-y-10">
+      <h2 class="text-5xl font-bold text-center mb-20" id="projects">
+        Projects
+      </h2>
+      <div
+        class="flex flex-col md:grid md:grid-cols-3 px-10 md:px-20 space-y-20 md:space-x-10 mb-20"
+      >
+        <div class="flex flex-col md:block space-y-5">
+          <img
+            src="image/Responsive testimonial grid.jpg"
+            class="w-100 h-50 md:w-100 md:h-50"
+          />
+          <h3 class="font-bold text-xl text-center md:text-left">
+            Responsive Testimonial Grid
+          </h3>
+          <p class="font-sans text-center md:text-left">
+            This project is a responsive testimonial grid layout built with HTML
+            and CSS. It showcases reviews from graduates of a coding bootcamp,
+            presented in an aesthetically pleasing and organized grid format.
+          </p>
+          <button
+            class="px-4 py-2 w-fit mx-auto rounded-md bg-blue-500 text-white"
+          >
+            <a href="https://hydrees.github.io/Testimonial-html/"
+              >Explore Project</a
+            >
+          </button>
         </div>
-     </div>
-     <!-- footer -->
-      <footer class="flex flex-col md:flex-row text-center justify-center bg-blue-500 text-white md:space-x-20 py-5">
-        <h3 class="text-xl">idrisbnabdussalam@gmail.com</h3>
-        <h3 class="text-xl">+2348064354794 / +2348100738854</h3>
-      </footer>
+        <div class="flex flex-col items-center md:block space-y-5">
+          <img
+            src="image/Responsive Order summary project.jpg"
+            class="w-100 h-50 md:w-100 md:h-50"
+          />
+          <h3 class="font-bold text-xl text-center md:text-left">
+            Responsive Order Summary
+          </h3>
+          <p class="font-sans text-center md:text-left">
+            This project is a responsive and user-friendly Order Summary UI
+            designed for a music streaming service. It allows users to review
+            their selected plan and proceed to payment seamlessly. The page is
+            clean, modern, and built with accessibility and user experience in
+            mind.
+          </p>
+          <button
+            class="px-4 py-2 w-fit mx-auto rounded-md bg-blue-500 text-white"
+          >
+            <a href="https://hydrees.github.io/ordersummaryfrontendmentor-html/"
+              >Explore Project</a
+            >
+          </button>
+        </div>
+        <div class="flex flex-col md:block space-y-5">
+          <img
+            src="image/Responsive landing page.jpg"
+            class="w-100 h-50 md:w-100 md:h-50"
+          />
+          <h3 class="font-bold text-xl text-center md:text-left">
+            Responsive Landing page
+          </h3>
+          <p class="font-sans text-center md:text-left">
+            This project is a modern responsive landing page desined and built
+            using HTML & CSS. It showcase a clean layout and optimized for all
+            screen sizes. The goal is to create an engaging first impression for
+            visitors while maintaining a simple, fast-loading structure.
+          </p>
+          <button
+            class="px-4 py-2 w-fit mx-auto rounded-md bg-blue-500 text-white"
+          >
+            <a href="https://hydrees.github.io/Newlandingpage-html/"
+              >Explore Project</a
+            >
+          </button>
+        </div>
+        <div class="flex flex-col md:block space-y-5">
+          <img
+            src="image/poll-System project image.jpg"
+            class="w-100 h-50 md:w-100 md:h-50"
+          />
+          <h3 class="font-bold text-xl text-center md:text-left">
+            A Purpose-Driven Poll System
+          </h3>
+          <p class="font-sans text-center md:text-left">
+            Vote with Hydrees is a responsive, interactive voting system built
+            with HTML, Tailwind CSS and JavaScript. The app collects real-time
+            votes on a meaningful life question and displays results using
+            percentage calculations and animated progress bars. It leverages
+            localStorage to persist user votes.
+          </p>
+          <button
+            class="px-4 py-2 w-fit mx-auto rounded-md bg-blue-500 text-white"
+          >
+            <a href="https://hydrees.github.io/voting-html/">Explore Project</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer
+      class="flex flex-col md:flex-row text-center justify-center bg-blue-500 text-white md:space-x-20 py-5"
+    >
+      <h3 class="text-xl">idrisbnabdussalam@gmail.com</h3>
+      <h3 class="text-xl">+2348064354794 / +2348100738854</h3>
+    </footer>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
